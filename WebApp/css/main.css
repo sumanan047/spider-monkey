@@ -1,0 +1,27 @@
+/* Specific navbar elemnts Bootstrap override */
+
+.bg-custom{
+    background-color: #03071E;
+}
+
+.custom-font-for-brand{
+    font-family: 'Nova Mono', monospace;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.temporary-class{
+    border:2px solid black;
+
+}
+.custom-font-for-jumbotron>h1{
+    /* font-family: 'Yeseva One', cursive; */
+    font-size: 3.5em;
+}
+.custom-font-for-jumbotron>p{
+    /* font-family: 'Yeseva One', cursive; */
+    font-size: 1em;
+}
+.date{
+    font-size: 1em;
+}
