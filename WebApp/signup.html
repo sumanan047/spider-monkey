@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+                                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+    <!-- /*Custom css file*/ -->
+
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Imported fonts section begins-->
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/7ecaa31d12.js" crossorigin="anonymous"></script>   
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- Imported fonts section ends-->
+
+    <title>Document1</title>
+</head>
+<body>
+    <!-- This section is for the navigation bar on the webpages for the website -->
+    <!-- Navigation bar element -->
+    <!-- bg-custom used for override of default blue color background color of navbar, white text left default -->
+    <nav class="navbar navbar-expand-sm bg-custom navbar-dark">
+
+        <!-- This section is for the Brand logo, maybe updated later -->
+
+        <a class="navbar-brand custom-font-for-brand" href="#">SM</a>
+
+        <!-- The section for the Brand logo ends here! -->
+
+<!--Modal  -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+          <p class="font-small blue-text d-flex justify-content-end"><a href="#" class="blue-text ml-1">
+            Forgot Password?</a></p>
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn bg-custom btn-outline-warning btn-block btn-rounded z-depth-1a">Sign in</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+          with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <button type="button" class="btn bg-custom btn-outline-warning btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+          <!--Twitter-->
+          <button type="button" class="btn bg-custom btn-outline-warning btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+          <!--Google +-->
+          <button type="button" class="btn bg-custom btn-outline-warning btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+            Sign Up</a></p>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+        
+        <!-- Modal ends -->
+
+
+        <!-- This section is for the navbar links -->
+        <botton class="navbar-toggler d-block d-sm-none" data-toggle="collapse" data-target="#navbarMenu">
+            <span class=navbar-toggler-icon></span>
+        </botton>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <li class="nav-item active">
+                    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Sign In</a>
+                </li>
+        </div>
+        <!-- This section for navbar links end here! -->
+
+
+    </nav>
+
+<!-- The section for navigation bar of the website ends here -->
+
+<!-- sign up elemnts starts here -->
+<div class="container text-center custom-font-for-jumbotron">
+    <div class = "row">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            <div class="signup-form">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <h2 class=mt-5>Sign Up</h2>
+                    <p>Please fill in this form to create an account!</p>
+                    <hr>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn bg-custom btn-outline-warning btn-primary btn-lg">Sign Up</button>
+                    </div>
+                </form>
+                <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+<!-- signup-elemnts ends here -->
+
+
+
+
+
+
+
+
+<!-- Footer area ends here -->
+    <!-- Opional Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    
+</body>
+</html>
